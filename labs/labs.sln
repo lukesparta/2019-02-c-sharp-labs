@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlLibrary1", "WpfCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_08_files", "lab_08_files\lab_08_files.csproj", "{AE151432-CE82-4168-A55B-57A7D891CD38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "touch-type", "touch-type\touch-type.csproj", "{6C9B1D1E-3EDA-46DB-912C-2AD7A529816B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{AE151432-CE82-4168-A55B-57A7D891CD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE151432-CE82-4168-A55B-57A7D891CD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE151432-CE82-4168-A55B-57A7D891CD38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9B1D1E-3EDA-46DB-912C-2AD7A529816B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9B1D1E-3EDA-46DB-912C-2AD7A529816B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9B1D1E-3EDA-46DB-912C-2AD7A529816B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9B1D1E-3EDA-46DB-912C-2AD7A529816B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
