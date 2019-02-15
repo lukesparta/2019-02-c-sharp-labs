@@ -14,7 +14,7 @@ namespace TouchType
         {
             int seconds;
             int gameMode;
-            Console.WriteLine("Welcome to the TouchType game. In this game you'll be timed how long it takes you to type characters a - b in seconds confirmed in the beginning.\n\nBefore you begin, please enter a number to confirm the amount of seconds you want to be timed by.");
+            Console.Write("Welcome to the TouchType game. \n\nIn this game you'llbe timed how long it takes you to type characters\na - b in seconds confirmed in the beginning.\n\nBefore you begin, please enter a number to confirm the amount of seconds you want to be timed by. ");
 
             //store input from user to confirm seconds in number
             seconds = Int32.Parse(Console.ReadLine());
@@ -25,6 +25,8 @@ namespace TouchType
 
             //store game mode select from user input
             gameMode = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("The game will begin when you press your first key.");
 
             //call stopwatch method with user input as parameters
             Stopwatch(seconds, gameMode);
