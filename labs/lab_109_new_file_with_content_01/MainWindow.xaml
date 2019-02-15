@@ -5,8 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab_109_new_file_with_content_01"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="auto" Width="988.538">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="gamerNameLabel" Grid.Row="1" Grid.Column="0" Content="Name"/>
+        <TextBox x:Name="txtGamerName" Grid.Row="1" Grid.Column="1" />
+
+        <Label x:Name="levelLabel" Grid.Row="2" Grid.Column="0" Content="Level"/>
+        <TextBox x:Name="txtLevel" Grid.Row="2" Grid.Column="1" />
+
+        <Label x:Name="scoreLabel"  Grid.Row="3" Grid.Column="0" Content="Score"/>
+        <TextBox x:Name="txtScore"  Grid.Row="3" Grid.Column="1" />
+
+        <Button x:Name="scoreDown" Background="Blue" Grid.Row="3" Grid.Column="2" Content="DOWN" Click="ScoreDown_Click"/>
+        <Button x:Name="scoreUp" Background="Blue" Grid.Row="3" Grid.Column="3" Content="UP" Click="ScoreUp_Click"/>
+        <Button x:Name="saveBtn" Background="Green" Grid.Row="4" Grid.Column="1" Content="SAVE" Click="SaveBtn_Click"/>
+
+        <Label x:Name="folderListLable" Grid.Row="6" Grid.Column="0" Content="Folder List"/>
+        <ListBox x:Name="folderList1" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="7"/>
+
+        <Label x:Name="fileListLable" Grid.Row="6" Grid.Column="2" Content="File List"/>
+        <ListBox x:Name="fileList" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="7"/>
+
+        <Label x:Name="createNewFile" Grid.Row="15" Grid.Column="0" Content="Create New File"/>
+        <Label x:Name="fileNameLabel" Grid.Row="16" Grid.Column="0" Content="File Name:"/>
+        <TextBox x:Name="txtFileName"  Grid.Row="16" Grid.Column="1" />
+        <Label x:Name="txtBlockFileLabel" Grid.Row="17" Grid.Column="0" Content="File Content:"/>
+        <TextBlock />
+        <Button x:Name="saveFileBtn" Background="Green" Grid.Row="20" Grid.Column="1" Grid.ColumnSpan="3" Content="SAVE" Click="SaveFileBtn_Click"/>
+        <TextBox x:Name="txtBlockFile" Grid.Row="17" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="3" TextWrapping="Wrap"/>
     </Grid>
 </Window>
