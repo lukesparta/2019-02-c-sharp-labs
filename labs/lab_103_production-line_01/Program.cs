@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace random_person
 {
@@ -10,9 +11,30 @@ namespace random_person
     {
         static void Main(string[] args)
         {
+            for (var i = 0; i < 100; i++)
+            {
+                Console.WriteLine(randomNumberGen());
+                Thread.Sleep(1000);
+            }
+        }
 
+        //randomly select person from array
+        static public string randomNumberGen()
+        {
+            string[] people = new string[] { "Luke Dawes", "John Doe",
+                                        "James Carter", "Travis Scott",
+                                        "Donald Trump", "Burno Mars",
+                                        "Justin Beiber", "Frank Ocean",
+                                        "Beyonce Knowles", "Lyrn Hill"};
+
+            Random randomNum = new Random();
+            int rn = randomNum.Next(people.Length);
+
+            return people[rn];
         }
     }
+
+    
 
     class Parent
     {
@@ -22,21 +44,8 @@ namespace random_person
         public DateTime dob;
 
         //array of 10 people
-        static string[] people = new string[] { "Luke Dawes", "John Doe",
-                                        "James Carter", "Travis Scott",
-                                        "Donald Trump", "Burno Mars",
-                                        "Justin Beiber", "Frank Ocean",
-                                        "Beyonce Knowles", "Lyrn Hill"};
+        
 
-        //randomly select person from array
-        static public int randomNumberGen()
-        {
-            Random randomNum = new Random();
-            int rn = randomNum.Next(people.Length);
-            return rn;
-        }
-
-        string b = people[randomNumberGen()];
 
         /*
          Use a randomise function to pick a random name from the array, also an age 1 to 100, 
