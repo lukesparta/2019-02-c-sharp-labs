@@ -26,19 +26,15 @@ namespace random_person
             TimeSpan ts = Today - dob;
             DateTime Age = DateTime.MinValue + ts;
 
+            var age1 = Today.Year - dob.Year;
 
-            // note: MinValue is 1/1/1 so we have to subtract...
-            int Years = Age.Year - 1;
-            int Months = Age.Month - 1;
-            int Days = Age.Day - 1;
 
-            
 
             for (var i = 0; i < 100; i++)
             {
                 Parent p01 = new Parent();
                 p01.name = people[randomNumberGen(0, 10)];
-                p01.age = randomNumberGen(1, 100);
+                p01.age = age1;
                 p01.dob = dob;
 
                 Console.WriteLine($"{p01.name} {p01.age} {p01.dob}");

@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_102_speed-typing_GUI_01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_103_production-line_01", "lab_103_production-line_01\lab_103_production-line_01.csproj", "{B8DB88F2-3702-4B72-886A-D33664CDDCE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_112_collections", "lab_112_collections\lab_112_collections.csproj", "{6163C1C8-8026-4264-A319-BC743DFF62DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "labs_test", "labs_test\labs_test.csproj", "{3FF8734C-C6A0-49D4-8857-460AA0FE8A05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,14 @@ Global
 		{B8DB88F2-3702-4B72-886A-D33664CDDCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8DB88F2-3702-4B72-886A-D33664CDDCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8DB88F2-3702-4B72-886A-D33664CDDCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6163C1C8-8026-4264-A319-BC743DFF62DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6163C1C8-8026-4264-A319-BC743DFF62DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6163C1C8-8026-4264-A319-BC743DFF62DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6163C1C8-8026-4264-A319-BC743DFF62DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF8734C-C6A0-49D4-8857-460AA0FE8A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF8734C-C6A0-49D4-8857-460AA0FE8A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF8734C-C6A0-49D4-8857-460AA0FE8A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF8734C-C6A0-49D4-8857-460AA0FE8A05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
