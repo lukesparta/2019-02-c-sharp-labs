@@ -11,26 +11,46 @@ namespace random_person
     {
         static void Main(string[] args)
         {
+            string[] people = new string[] { "Luke Dawes", "John Doe",
+                                        "James Carter", "Travis Scott",
+                                        "Donald Trump", "Burno Mars",
+                                        "Justin Beiber", "Frank Ocean",
+                                        "Beyonce Knowles", "Lauyrn Hill"};
+
+
+            string year = randomNumberGen(1919, 2019).ToString();
+            string month = randomNumberGen(1, 12).ToString();
+            string day = randomNumberGen(1, 31).ToString();
+            DateTime dob = Convert.ToDateTime($"{year}/{month}/{day}");
+            DateTime Today = DateTime.Now;
+            TimeSpan ts = Today - dob;
+            DateTime Age = DateTime.MinValue + ts;
+
+
+            // note: MinValue is 1/1/1 so we have to subtract...
+            int Years = Age.Year - 1;
+            int Months = Age.Month - 1;
+            int Days = Age.Day - 1;
+
+            
+
             for (var i = 0; i < 100; i++)
             {
-                Console.WriteLine(randomNumberGen());
+                Parent p01 = new Parent();
+                p01.name = people[randomNumberGen(0, 10)];
+                p01.age = randomNumberGen(1, 100);
+                p01.dob = dob;
+
+                Console.WriteLine($"{p01.name} {p01.age} {p01.dob}");
                 Thread.Sleep(1000);
             }
         }
 
         //randomly select person from array
-        static public string randomNumberGen()
+        static public int randomNumberGen(int b1, int b2)
         {
-            string[] people = new string[] { "Luke Dawes", "John Doe",
-                                        "James Carter", "Travis Scott",
-                                        "Donald Trump", "Burno Mars",
-                                        "Justin Beiber", "Frank Ocean",
-                                        "Beyonce Knowles", "Lyrn Hill"};
-
             Random randomNum = new Random();
-            int rn = randomNum.Next(people.Length);
-
-            return people[rn];
+            return randomNum.Next(b1, b2);
         }
     }
 
@@ -42,11 +62,6 @@ namespace random_person
         public string name;
         public int age;
         public DateTime dob;
-
-        //array of 10 people
-        
-
-
         /*
          Use a randomise function to pick a random name from the array, also an age 1 to 100, 
        also a date constructed from dd/mm/yyyy where dd,mm and yyyy are randomly generated
