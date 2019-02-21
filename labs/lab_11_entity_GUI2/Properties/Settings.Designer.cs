@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace lab_111_entity_gui.Properties
+namespace lab_11_entity_GUI2.Properties
 {
 
 
