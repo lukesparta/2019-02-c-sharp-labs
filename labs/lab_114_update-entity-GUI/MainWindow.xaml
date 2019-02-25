@@ -13,8 +13,7 @@
         <Label Content="City:" HorizontalAlignment="Left" Margin="260,54,0,0" VerticalAlignment="Top"/>
         <Label x:Name="cityLabel" Content="" HorizontalAlignment="Left" Margin="336,54,0,0" VerticalAlignment="Top"/>
         <Label Content="Choose City:" HorizontalAlignment="Left" Margin="260,85,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cityDropDown" HorizontalAlignment="Left" Margin="340,88,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cityDropDown" HorizontalAlignment="Left" Margin="340,88,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CityDropDown_SelectionChanged"/>
         <Button Content="Update" HorizontalAlignment="Left" Margin="260,138,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click"/>
-
     </Grid>
 </Window>

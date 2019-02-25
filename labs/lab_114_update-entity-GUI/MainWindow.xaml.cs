@@ -35,12 +35,17 @@ namespace lab_114_update_entity_GUI
             using (NorthwindEntities db = new NorthwindEntities())
             {
                 customers = db.Customers.ToList<Customer>();
+                List<string> cities = new List<string>();
                 custListBox.ItemsSource = customers;
                 custListBox.DisplayMemberPath = "ContactName";
-                cityDropDown.Items.Add("London");
-                cityDropDown.Items.Add("Paris");
-                cityDropDown.Items.Add("Kingston");
-                cityDropDown.Items.Add("New York");
+                                
+                foreach (var city in customers)
+                {
+                    if (!cities.Contains(city.City))
+                    {
+                        cityDropDown.Items.Add(city.City);
+                    }
+                }                              
             }
         }
 
@@ -60,7 +65,10 @@ namespace lab_114_update_entity_GUI
         {
             using (var db = new NorthwindEntities())
             {
+                // get object of customer to update where the name selected matched the name in the database and retunt the first one
                 var nameToUpdate = db.Customers.Where(c => c.ContactName == customer.ContactName).FirstOrDefault();
+
+                // get object of customer to update where the city selected matched the city in the database and retunt the first one
                 var cityToUpdate = db.Customers.Where(c => c.City == customer.City).FirstOrDefault();
 
                 nameToUpdate.ContactName = Convert.ToString(customerName.Text);
