@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using lab_112_collections;
+using lab_113_arraylist;
 
 
 namespace labs_test
@@ -23,6 +24,23 @@ namespace labs_test
             // assert
             Assert.AreEqual(expected01, actual01);
             Assert.AreEqual(expected02, actual02);
+        }
+
+
+
+        //TEST FOR LAB 113
+        [TestMethod]
+        public void Lab113CollectiArrayListTest()
+        {
+            // arrange
+            var expected = 480;
+            var instanceLab113 = new arrayList();
+
+            // act
+            var actual = instanceLab113.arrayListMethod(1,2,3,4);
+
+            // assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }
